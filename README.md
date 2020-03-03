@@ -62,3 +62,9 @@ Object j=(String)list.get(i);
 
 
 ## 字符串（string）
+
+## Dynamic Programming
+### [线性规划各种模型](https://blog.csdn.net/u013309870/article/details/75193592?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+
+
+
