@@ -65,6 +65,8 @@ Object j=(String)list.get(i);
 
 ## Dynamic Programming
 ### [线性规划各种模型](https://blog.csdn.net/u013309870/article/details/75193592?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+### 最长回文字串
 
+### 背包问题
 
 
