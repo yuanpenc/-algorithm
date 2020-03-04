@@ -68,5 +68,60 @@ Object j=(String)list.get(i);
 ### 最长回文字串
 
 ### 背包问题
+```
+package knapsack;
 
+public class knapsack {
+	
+	private int item=6;
+	private int weight=21;
+
+	
+	int[][] bag=new int[item][weight];
+	private int[] itemList= {0,3,4,5,8,10};
+	private int[] weightList= {0,2,3,4,5,9};
+	
+
+	
+	public void solution() {
+		for (int i=1;i<item;i++) {
+			for (int w=1;w<weight;w++) {
+				if(weightList[i]>w) {
+					bag[i][w]=bag[i-1][w];
+				}
+				else {
+					int value1=bag[i-1][w];
+					int value2=bag[i-1][w-weightList[i]]+itemList[i];
+					
+					bag[i][w]=Math.max(value1, value2);
+				}
+			}
+		}
+		
+	
+	}
+
+	public static void main(String[] args) {
+		knapsack case1 =new knapsack();
+		case1.solution();
+		for(int i=0;i<6;i++) {
+			for (int j=0;j<21;j++) {
+				System.out.print(case1.bag[i][j]);
+			}
+			System.out.println();
+		}
+		
+	}
+}
+
+################################################
+result:
+000000000000000000000
+003333333333333333333
+003447777777777777777
+003457899121212121212121212121212
+00345881112131516171720202020202020
+00345881112131516171720202122232526
+################################################
+```
 
